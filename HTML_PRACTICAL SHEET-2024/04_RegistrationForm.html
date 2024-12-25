@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #1185a3;
+        }
+
+        .reg {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+        legend {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 900;
+        }
+
+        fieldset {
+            margin-top: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        table {
+            width: 1306px;
+            margin: auto;
+            font-size: 30px;
+            padding: 30px;
+        }
+
+        td {
+            padding: 20px;
+        }
+
+        #sel1 {
+            padding: 5px;
+            text-align: center;
+            padding-right: 158px;
+        }
+
+        #sel2 {
+            padding-right: 130px;
+            text-align: center;
+            padding-top: 11px;
+        }
+
+        .select {
+            font-size: 50px;
+        }
+
+        input {
+            padding: 5px;
+            text-align: center;
+            padding-right: 158px;
+        }
+
+        .btn {
+            background-color: rgb(226, 11, 11);
+            border: 2px solid black;
+            color: rgb(16, 226, 233);
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 20px;
+            margin: 4px 2px;
+            right: 500px;
+            cursor: pointer;
+        }
+
+        .divbtn {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reg">
+        <fieldset>
+            <legend>Registration Details</legend>
+            <form action="#" method="get" name="Myform">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="uni">university</label>
+                        </td>
+                        <td>
+                            <input type="text" name="user" minlength="4" required id="uni" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Institute">Institute</label>
+                        </td>
+                        <td>
+                            <input type="text" name="user" minlength="4" id="Institute" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sel2">Branch :</label>
+                        </td>
+                        <td>
+                            <select id="sel2">
+                                <option>--select--</option>
+                                <optgroup label="Surat Branch">
+                                    <option>Ring Road</option>
+                                    <option>Varacha</option>
+                                    <option>Limbyat</option>
+                                </optgroup>
+                                <optgroup label="Ahemdabad Branch">
+                                    <option>Salunke</option>
+                                    <option>sita nager</option>
+                                    <option>vata gidc</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Degree</label>
+                        </td>
+                        <td>
+                            <select id="sell">
+                                <option>--select--</option>
+                                <option>BCA</option>
+                                <option>MCA</option>
+                                <option>Btech</option>
+                                <option>B.S.C</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="radio" name="Degree" id="Degree1" />
+                            <label for="Degree1">Pursuing</label>
+                            <input type="radio" name="Degree" id="Degree" /><label for="Degree">Completed</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">email</label>
+                            <input type="email" id="email" name="email" required>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Averge">Averge</label>
+                        </td>
+                        <td><input type="text" maxlength="2" id="Averge" />Upto</td>
+                        <td><input type="text" maxlength="2" />Th Semester</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Experince :</label>
+                        </td>
+                        <td><input type="text" maxlength="2" />Years</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <iabel>Your Website/Blog :</iabel>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="https://www.googel.com" />
+                        </td>
+                    </tr>
+                </table>
+                <div class="divbtn">
+                    <button type="submit" class="btn">Register</button>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

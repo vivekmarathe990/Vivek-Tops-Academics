@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        header,
+        footer {
+            font-size: 25px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        .images {
+            width: 100%;
+            height: 70%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            padding: 0px 30px;
+            margin: 20px 0px;
+            place-content: center;
+            place-items: center;
+
+        }
+
+        .images img {
+            width: 260px;
+            height: 217px;
+            transition: transfrom 0.5s ease-in-out;
+
+        }
+
+        .box {
+            overflow: hidden;
+            border: solid 2px rgb(12, 12, 12);
+            border-radius: 10px;
+            height: 210px;
+            box-shadow: 5px 5px 20px 3px black;
+
+        }
+
+        .images img:hover {
+            transform: scale(1.2);
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Image Gallary </h1>
+    </header>
+    <hr width="100%" size="6px" color="blue" />
+    <div class="images">
+        <div class="box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuSyAbTqJyEHTP4OJVL_hojBGaJppZLheVg&s" alt="img.1"></div>
+        <div class="box"><img
+                src="https://images.pexels.com/photos/97533/pexels-photo-97533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="img.2"></div>
+        <div class="box"><img
+                src="https://images.pexels.com/photos/596792/pexels-photo-596792.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="img.3"></div>
+        <div class="box"><img
+                src="https://images.pexels.com/photos/2226006/pexels-photo-2226006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="img.4"></div>
+        <div class="box"><img
+                src="https://images.pexels.com/photos/414181/pexels-photo-414181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="img.5"></div>
+        <div class="box"><img
+                src="https://images.pexels.com/photos/35671/bird-bullfinch-males-garden.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="img.6">
+        </div>
+        <div class="box"><img
+                src="https://images.pexels.com/photos/4371587/pexels-photo-4371587.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="img.7"></div>
+        <div class="box"><img
+                src="https://images.pexels.com/photos/532992/pexels-photo-532992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="img.8"></div>
+        <div class="box"><img
+                src="https://images.pexels.com/photos/2695703/pexels-photo-2695703.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="img.9"></div>
+        <div class="box"><img
+                src="https://images.pexels.com/photos/917105/pexels-photo-917105.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="img.10"></div>
+    </div>
+    <hr width="100%" color="black" size="6px" />
+    <footer>
+        <h3>Copyright &Copy;2024 Image Gallary</h3>
+    </footer>
+</body>
+
+</html>
