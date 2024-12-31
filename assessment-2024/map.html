@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with Google Map</title>
+    <link rel="stylesheet" href="./map.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+    <div class="main">
+        <h1 id="title1">CONTACT US</h1>
+
+        <div class="container common">
+            <div class="address">
+                <div>
+                    <p>Address:</p>
+                    <pre>Saint Marco Street,6th
+Floor,Tykyo,Japan,123456
+                    </pre>
+                </div>
+                <div class="contact" >
+                    <p style="color: red;">📞 91 1234567890</p>
+                    <p style="color: rgb(111, 230, 228);">📩 example@gmail.com</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-red fa-location-dot"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container common">
+            <div class="inner">
+                <div class="contact-us">
+                    <form>
+                        <div class="form-container">
+                            <input type="text" id="name" minlength="3" maxlength="6" pattern="[A-Za-z\s]+" name="name"
+                                placeholder="Name" required>
+
+                            <input type="text" id="name" name="name" placeholder="Company" required>
+                        </div>
+
+                        <div class="form-container">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+
+                            <input type="tel" pattern="^[0-9]{10 }$" maxlength="10" placeholder="Mobile" required>
+                        </div>
+
+                        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+                        <div>
+                            <button style="background-color: red;color: white;border: none;padding: 6px;"
+                                type="submit">Send
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1811.675098150736!2d72.86259792257854!3d21.16843070770322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fdaac35b265%3A0xdad2c5a59c3e1dc8!2sNilgiri%2C%20Limbayat%2C%20Surat%2C%20Gujarat%20395012%2C%20India!5e1!3m2!1sen!2sau!4v1735121338386!5m2!1sen!2sau"
+                        height="300"></iframe>
+                    </iframe>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
